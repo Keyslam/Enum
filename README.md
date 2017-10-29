@@ -4,7 +4,7 @@ Example:
 local Enum = require("enum") -- Require the library
 
 -- Create an enum either with variable amount of variables, or a table holding it.
-local Directions = Enum("Up", "Down", "Left", "Right)
+local Directions = Enum("Up", "Down", "Left", "Right")
 local Directions = Enum({"Up", "Down", "Left", "Right"})
 
 -- Access a enum simply with the key.
