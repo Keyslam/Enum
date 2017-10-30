@@ -18,8 +18,21 @@ elseif myDirection == Directions.Down then
    print("Ship is going down!")
 end
 
+-- Printing enums
+print(myDirection.Up) -- 'Up'
+print(Directions.Down) -- 'Down'
+
+for key, value in pairs(Directions) do
+  print(key.. " : " ..value)
+end
+--[[ -- In no predefined order:
+'Up : Up'
+'Down : Down'
+'Left : Left'
+'Right : Right'
+]]
 
 -- Some nice to knows
-local myDirection = Directions.Sideways -- Error: Attempt to index non-existant enum 'Sideways'.
-myDirection.foo = "bar" -- Error: "Attempt to write to static enum"
+local Directions = Directions.Sideways -- Error: Attempt to index non-existant enum 'Sideways'.
+Directions.foo = "bar" -- Error: "Attempt to write to static enum"
 ```
