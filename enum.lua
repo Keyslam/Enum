@@ -1,6 +1,6 @@
 local Enum = {}
 local Meta = {
-   __index    = function(_, k) error("Attempt to index non-existant enum '"..k.."'.") end,
+   __index    = function(_, k) error("Attempt to index non-existant enum '"..tostring(k).."'.") end,
    __newindex = function()     error("Attempt to write to static enum") end,
 }
 
